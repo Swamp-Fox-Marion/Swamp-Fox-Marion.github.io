@@ -1,3 +1,14 @@
-p {
-    color: red;
-  }
+html {
+    font-size: 10px
+    font-family: "Nothing You Could Do", cursive;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
