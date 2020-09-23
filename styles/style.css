@@ -1,6 +1,6 @@
 html {
     font-family: "Nothing You Could Do", cursive;
-    font-size: 12px;
+    font-size: 24px;
 }
 
 html {
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    width: 450px;
+    width: 750px;
     margin: 0 auto;
     background-color:#208C3F;
     padding: 0 20px 20px 20px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 p, li {
-    font-size: 10px;
+    font-size: 24px;
     line-height: 2;
     letter-spacing: 1px;
 }
