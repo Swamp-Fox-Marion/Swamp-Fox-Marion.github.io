@@ -6,6 +6,7 @@ function addnumbers() {
     //processing
     number1 = parseFloat(number1);
     number2 = parseFloat(number2);
+    //add the two numbers together and store in my output variable
     let sum = number1 + number2;
 
     //output
