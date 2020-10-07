@@ -9,7 +9,7 @@ function addnumbers() {
     let sum = number1 + number2;
 
     //output
-    document.getElementById("output").innerHTML = "The sum <strong>is</strong> " + sum + ".";
+    document.getElementById("sum").innerHTML = "The sum <strong>is</strong> " + sum + ".";
 
 
 }
