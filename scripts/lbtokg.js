@@ -1,7 +1,7 @@
 function multiplyNumbers() {
     //input number1 needs to be pounds there isnt a number2
     let number1 = document.getElementById("number1").value;
-    let number2 = document.getElementById("number2").value;
+    let number2 = ("0.456592").value;
 
     
     //processing
