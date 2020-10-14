@@ -5,7 +5,7 @@ function multiplyNumbers() {
 
     
     //processing
-    number1 = parseFloat(number1).toFixed(1);
+    number1 = parseFloat(number1);
     
     //add the two numbers together and store in my output variable
     //processing needs to convert number1 from pounds to kilograms
@@ -14,7 +14,7 @@ function multiplyNumbers() {
    
     //output
     //print to screen the conversion
-    document.getElementById("kilograms").innerHTML = "The conversion <strong>is</strong> " + kilograms + ".";
+    document.getElementById("kilograms").innerHTML = "The conversion <strong>is</strong> " + kilograms.toFixed(1) + ".";
 
 
 }
