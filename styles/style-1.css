@@ -1,0 +1,80 @@
+html {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 24px;
+}
+
+html {
+    background-color: #58fd6e;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color:#6a6e6c;
+    padding: 0 40px 20px 40px;
+    border: 5px solid black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    padding: 20px 0;    
+    color: #18009f;
+    text-shadow: 3px 3px 1px rgb(7, 171, 247)
+}
+
+p, li {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+	background-color: #000;
+	color: #58fd6e;
+	padding: 10px;
+}
+
+footer {
+	font-size: 18px;
+    letter-spacing: 1.5pt;
+    color: #58fd6e
+}
+h2 {
+	margin: 0;
+}
+
+h2, #currentdate {
+    color: #18009f;
+    text-shadow: 3px 3px 1px rgb(7, 171, 247)
+}
+main {
+	margin: 10px auto;
+	border: 1px solid #999;
+	padding: 10px;
+	max-width: 500px;
+	background-color: #abe;
+	box-shadow: 0 0 30px;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid #333;
+	padding: 0;
+}
+
+label {
+	display: block;
+	margin: 5px;
+}
+
+input, button {
+padding: .5rem;
+}
