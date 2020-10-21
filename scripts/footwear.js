@@ -1,6 +1,9 @@
 function decideForMe(){
-    var text = document.getElementById("weather").value
-    switch (text) {
+    //input is the selection of the dropdown set as a variable as 'let weather
+    let weather = document.getElementById("weather").value
+    //processing the input from user through a switch statement(s)
+    //to output the string that coresponds with the correct process from the unput from user
+    switch (weather) {
         case "hot":  
             document.getElementById("shoes").innerText ="It is best you wear sandals today";
             break;
@@ -13,7 +16,6 @@ function decideForMe(){
         default:
             document.getElementById("shoes").innerText ="Who cares about the weather just wear shoes you love today";
             break;
-            //using switch statement was fewest lines of code
-            //simple for me to know what results I wanted and the results I got
+            
     }    
 }
