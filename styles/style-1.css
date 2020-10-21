@@ -4,7 +4,7 @@ html {
 }
 
 html {
-    background-color: #58fd6e;
+    background-color: rgb(7, 171, 247);
 }
 
 body {
@@ -44,7 +44,7 @@ footer {
 footer {
 	font-size: 18px;
     letter-spacing: 1.5pt;
-    color: #58fd6e
+    color: #18009f
 }
 h2 {
 	margin: 0;
@@ -59,7 +59,7 @@ main {
 	border: 1px solid #999;
 	padding: 10px;
 	max-width: 500px;
-	background-color: #abe;
+	background-color: #18009f;
 	box-shadow: 0 0 30px;
 }
 
