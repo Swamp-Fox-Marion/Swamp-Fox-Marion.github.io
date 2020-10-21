@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Exam1 part2 Q1</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Question 1</h1>
+        <h2>Alecia Moyer</h2>
+    </header>
+    <main>
+        <h3>Calculate Pay</h3>
+        <label>Enter Regular Hours: <input type="text" id="number1"></label>
+        <label>Enter Overtime Hours: <input type="text" id="number2"></label>
+        <label><button onclick="calctax()">Calculate</button></label>
+        <hr>
+        <p><span id="pay"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Alecia Moyer &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        //input what is the employee pay. what is the tax rate
+        //number1 = the employee pay
+        //number2 = the employee overtime
+        function calctax() {
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+
+
+        //process the formula to do this
+            number1 = parseFloat(number1);
+            number2 = parseFloat(number2);
+
+            let pay = (number1 * 15) + (number2 * 22.50) * .15;
+
+               
+        //output what is the final product
+        document.getElementById("pay").innerHTML = "<strong>The</strong> employee's after tax pay is $" + pay.toFixed(2) + ".";
+        }        
+    </script>
+</body>
+
+</html> 

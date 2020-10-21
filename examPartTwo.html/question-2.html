@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 1 P2 Q2</title>
+   
+</head>
+
+<body>
+    <header>
+        <h1>Exam 1 Part 2 Question 2</h1>
+        <h2>Alecia Moyer</h2>
+    </header>
+    <main>
+        <h3>Calculate the Volume of a Cylinder</h3>
+        <label>Enter Radius: <input type="text" id="r"></label>
+        <label>Enter Height: <input type="text" id="h"></label>
+        <label><button onclick="volume()">Find Volume</button></label>
+        <hr>
+        <p><span id="volume"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Alecia Moyer &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function volume() {
+            //input is the radius and height of the cylinder
+            let r = parseFloat(document.getElementById("r").value);
+            let h = parseFloat(document.getElementById("h").value);
+             
+
+            //process the formula of cylinder with the users input
+           
+            
+            let volume = Math.PI*r^2*h;
+
+            //output the program to display for the user
+        document.getElementById("volume").innerHTML = "The volume of the cylinder is " + volume + "."; 
+
+        }
+        
+    </script>
+</body>
+
+</html>
