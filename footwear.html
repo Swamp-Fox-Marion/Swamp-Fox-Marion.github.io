@@ -16,7 +16,15 @@
     </header>
     <main>
         <h3>Footwear Decider</h3>
-        <label>Is the weather hot, rain, snow, or other: <input type="text" id="weather"></label>
+        <label>
+            <select name="weather" id="Weather">
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="hot">Hot</option>
+            <option value="rain">Rain</option>
+            <option value="snow">Snow</option>
+            <option value="unknown">Unknown</option>
+            </select>
+        </label>
         <label><button onclick="decideForMe()">Footwear</button></label>
         <hr>
         <p><span id="shoes"></span></p>
