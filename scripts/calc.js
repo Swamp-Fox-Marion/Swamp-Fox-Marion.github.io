@@ -1,15 +1,26 @@
-//input is user input change string to integer
-let a = parseInt(
-let b = parseInt(  
+function doMath () {
+    //input is user input change string to integer
+    let a = parseInt(document.getElementById("a")).value;
+    let b = parseInt(document.getElementById("b")).value;
+    let operator = document.getElementById("opSel").value;
+    let answer = parseInt(document.getElementById("answer")).value;
+
+
 
 //processing is determining the options
-switch (variable) {
-    case vaue:
-        statement;
-        break;
-    default:
-        statement;
-        break;
-
+    if (operator == "+") {
+        answer === a + b
+        document.getElementById("return").innerHTML = "Correct";
+    }else if (operator == "-") {
+        answer === a - b
+        document.getElementById("return").innerHTML = "Correct";
+    }else if (operator == "*") {
+        answer === a * b
+        document.getElementById("return").innerHTML = "Correct";
+    }else if (operator == "/") {
+        answer === a / b
+        document.getElementById("return").innerHTML = "Correct";
+    }else {
+        document.getElementById("return").innerHTML = "Incorrect";
+    }
 }
-//output is display the correct statement for user

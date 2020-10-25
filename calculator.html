@@ -4,23 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIT 160 Template Document</title>
-    <link href="styles/style.css" rel="stylesheet">
+    <title>CIT 160 Math So Scary</title>
+    <link href="styles/style-1.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Week 3: Add Two Numbers</h1>
-        <h2>Alecia Moyer</h2>
+        <h1>Week 6: Simple Calculator</h1>
+        <h2>By: Alecia Moyer</h2>
     </header>
     <main>
-        <h3>Add Two Numbers</h3>
-        <label>Enter Number One: <input type="text" id="int1"></label>
-        <label>Enter Number Two: <input type="text" id="int2"></label>
-        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <h3>Enter Numbers if You Dare</h3>
+        <label>Enter Number One: <input type="text" id="a"></label>
+        <label for="operation">Choose an operator:</label>
+
+        <select name="calculator" id="opSel">
+            <option value="">--Please choose an operator--</option>
+            <option value="+">Addition +</option>
+            <option value="-">Subtract -</option>
+            <option value="*">Multiply *</option>
+            <option value="/">Divide /</option>
+        </select>
+        <label>Enter Number Two: <input type="text" id="b"></label>
+        <label>Enter Your Answer: <input type="text" id="answer"></label>
+        <label><button onclick="doMath()">=</button></label>
         <hr>
-        <p><span id="output"></span></p>
+        <p><span id="return"></span></p>
     </main>
     <footer>
         &copy;2020 &bull; Alecia Moyer &bull; BYU-Idaho &bull; CIT 160
