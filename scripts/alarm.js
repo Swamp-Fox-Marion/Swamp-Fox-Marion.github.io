@@ -16,7 +16,7 @@ function alarm() {
     let month = now.getMonth();
     let dayOfMonth = now.getUTCDate();
     let dayOfWeek = now.getUTCDay();
-
+// I used == because I was getting error with only =
     if (month == 0 && dayOfMonth == 1) {
         message = "Sleep in.";
     }
