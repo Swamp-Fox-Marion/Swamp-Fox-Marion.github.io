@@ -1,18 +1,18 @@
 html {
-    font-family: "Nothing You Could Do", cursive;
+    font-family: "Syne Mono", monospace;
     font-size: 24px;
 }
 
 html {
-    background-color: #FD58AA;
+    background-color: black;
 }
 
 body {
     width: 600px;
     margin: 0 auto;
     background-color:black;
-    padding: 0 40px 20px 40px;
-    border: 5px solid rgb(17, 192, 55);
+    padding: 40px 40px 20px 40px;
+    border: 10px solid rgb(17, 192, 55);
 }
 
 h1 {
@@ -20,7 +20,7 @@ h1 {
     font-size: 60px;
     margin: 0;
     padding: 20px 0;    
-    color: #9f8f00;
+    color: rgb(17, 192, 55);
     text-shadow: 3px 3px 1px black
 }
 
@@ -36,12 +36,13 @@ img {
 }
 
 footer {
-	background-color: #000;
+	background-color: black;
 	color: #FD58AA;
 	padding: 10px;
 }
 
 footer {
+    text-align: center;
 	font-size: 18px;
     letter-spacing: 1.5pt;
     color: #FD58AA
@@ -51,30 +52,36 @@ h2 {
 }
 
 h2, #currentdate {
-    color: #9f8f00;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 20px 0;    
+    color: rgb(17, 192, 55);
     text-shadow: 3px 3px 1px black
 }
 main {
 	margin: 10px auto;
-	border: 1px solid #999;
+	border: 1px solid rgb(17, 192, 55);
 	padding: 10px;
 	max-width: 500px;
-	background-color: #abe;
+	background-color: white;
 	box-shadow: 0 0 30px;
 }
 
 h3 {
 	font-size: 24px;
 	margin: 0 0 15px 0;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid rgb(17, 192, 55);
 	padding: 0;
 }
 
 label {
+    color: rgb(17, 192, 55);
 	display: block;
 	margin: 5px;
 }
 
 input, button {
+    box-align: center;
 padding: .5rem;
 }
