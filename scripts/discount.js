@@ -25,11 +25,11 @@ function discount() {
     if (subtotal > 50 && dayOfWeek == 2 ){
         if (subtotal >50 && dayOfWeek == 3 )
             newSubtotal = subtotal - (subtotal * .10);
-            message = newSubtotal + (newSubtotal * .06) ;
+            message = parseFloat(newSubtotal + (newSubtotal * .06)) ;
     } 
     else {
-        message = subtotal + (subtotal * .06);
+        message = parseFloat(subtotal + (subtotal * .06));
     }
     //output the message that the process had computed
-    document.getElementById("output").innerHTML = message;
+    document.getElementById("output").innerHTML = "Your total today will be $" + message.toFixed(2);
 }   
