@@ -13,20 +13,21 @@ function discount() {
     
     /*customers subtotal > 50 && dayOfWeek = 2 || dayOfWeek = 3
     then - .10 from subtotal 
-    output is new subtotal + sales tax .06 */
+    output is new subtotal + sales tax .06
+     */
 
     //input the required info for the program to run the function
     let subtotal = parseFloat(document.getElementById("subtotal").value);
-    let dayOfWeek = new Date().getUTCDay();
+    let dayOfWeek = new Date().getDay();
     let newSubtotal;
 
-
     //processing the info taken from the user input and the internal system
-    if (subtotal > 50 && dayOfWeek == 2 || subtotal >50 && dayOfWeek == 3) {
-        newSubtotal = subtotal - (subtotal * .10);
-        message = newSubtotal + (newSubtotal * .06) ;
-        
-    } else {
+    if (subtotal > 50 && dayOfWeek == 2 ){
+        if (subtotal >50 && dayOfWeek == 3 )
+            newSubtotal = subtotal - (subtotal * .10);
+            message = newSubtotal + (newSubtotal * .06) ;
+    } 
+    else {
         message = subtotal + (subtotal * .06);
     }
     //output the message that the process had computed
