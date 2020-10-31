@@ -9,7 +9,7 @@
         occur on a fixed day each year.*/
 
         // I put this here hoping it would display the date on the console
-document.getElementById("date").innerHTML = new Date();
+
        
         
 let now = new Date();   
