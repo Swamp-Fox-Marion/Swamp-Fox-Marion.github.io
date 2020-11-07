@@ -28,7 +28,7 @@ have been met*/
     }
     /*Output is the repetition has met its concluding factors and the results displays
 to the user*/
-    document.getElementById("output").innerText = "The sum of the odds is " + count
+    document.getElementById("output").innerHTML = "The sum of the odds is " + count
 }
    
 
