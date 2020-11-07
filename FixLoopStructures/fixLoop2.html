@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 week 8</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 8: fixing loop2 structures</h1>
+        <h2>Alecia Moyer</h2>
+    </header>
+    <main>
+        <hr>
+        <p><span id="display2"></span></p>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+    let output2;
+    for (let j = 0; j < 3; j++) {
+        if (j !== 2) {
+        output2 += `Part 2:${j} `;
+        }
+        else {
+            output2 += `Part 2:${j}`;
+        }  
+    }   
+document.getElementById('display2').textContent = output2;
+
+/*output should be
+Part 2:0, Part 2:1, Part 2:2*/
+    </script>
+    
+
+</body>
+
+</html>
