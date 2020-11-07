@@ -14,12 +14,12 @@ If a user entered 11, your program would add 1 + 3 + 5 + 7 + 9 + 11 and output 3
 function sumOdds() {
     let n = document.getElementById("n").value;
     let count = 0;
-    
+    let i;
 
     
     /*Processing is placing the input into the fuction and repeat until perameters 
 have been met*/
-    for (let i=1; i <= n; i++){
+    for (i=1; i <= n; i++){
         count += i;
         i++;
         
