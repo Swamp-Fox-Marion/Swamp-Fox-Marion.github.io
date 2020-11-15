@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Exam 2: A.Moyer Program 3</title>
+</head>
+<body>
+  <p>Please enter numbers:</p>
+  <label> Start<input type="text" id="one" size="5"><br></label>
+  <label>End<input type="text" id="two" size="5"><br></label>
+  <label>Divisor<input type="text" id="three" size="5"></label>
+  <button type="button" onclick="onClick()">Click</button>
+  <div id="output"></div>
+
+  <script>
+    function onClick(){
+        let start = parseInt(document.getElementById("one").value);
+        let end = parseInt(document.getElementById("two").value);
+        let div = parseInt(document.getElementById("three").value);
+        let answer = "";
+        //let i = 0
+//processing a repeating loop
+// I cant ask the loop to work when i is less than 'start' in the beginning. 
+// i isnt always going to be % div so the loop ends there
+     //while (i % div === 0) 
+
+        /*for (let i = 1; i <= end; i++) {
+            if (i >= start && i <= end){
+                answer +=` ${i % div === 0} <br>`;
+            }    
+        }
+    }
+//output to the console the repeating message
+document.getElementById("output").innerHTML = answer;*/
+
+        
+        
+
+    
+        
+        for(let i = 1;i <= end; i++){
+            if(div % i == 0){
+                answer += `${i}`;
+            
+        // it isn't looping from here ?? just goes to else and quits??
+                answer >= start && answer <= end;
+                document.getElementById("output").innerHTML = answer;
+            }    //}else {
+                  // document.getElementById("output").innerHTML = "Am I close?";
+                
+        }
+    } 
+
+
+        
+        
+        
+      /*  
+        for (i = 0; i <= end; i++) {
+            if (i % div) {
+            output = i;
+            }
+        }
+    }
+    document.getElementById("output").innerHTML = output
+    /*Input:start end and divisor by user
+    using the divisor as the count
+     * Processing:
+        while (div <= end){
+            output += `${start} % ${div}`;
+            div ++;
+        }
+     need something else. for (i=0; i>=start && i<=end; i++)
+    }
+    document.getElementById("output").innerHTML = output
+    
+      Output: divisible by skip
+
+    Write a JavaScript program that reads three integers named start, 
+    end, and divisor from three text fields. Your program must output 
+    to a div all the integers between start and end, inclusive, that are
+    evenly divisible by divisor. The output integers must be separated by
+    spaces.
+    For example, if a user entered 17, 30, and 5, your program would output
+    "20 25 30" (without the quotes) because those are the only integers between
+    17 and 30 (including 17 and 30) that are evenly divisible by 5.
+    */
+  </script>
+</body>
+</html>

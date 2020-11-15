@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Exam 2: </title>
+</head>
+<body>
+  <p>Please enter two numbers:</p>
+  <input type="text" id="one" size="5"><br>
+  <input type="text" id="two" size="5">
+  <button type="button" onclick="onClick()">Click</button>
+  <div id="output"></div>
+
+  <script>
+    function onClick() {  
+        let input1 = Math.floor(document.getElementById("one").value);
+        let input2 = Math.floor(document.getElementById("two").value);
+        let message = " ";
+    
+
+        if (input1 > 5 && input2 > 5 || input1 + input2 > 20){
+            document.getElementById("output").innerHTML = "True"
+        }else {
+            document.getElementById("output").innerHTML = "False"
+        }
+        
+    }
+    
+    
+    /* Input: input1 > 5 && input 2 > 5
+    
+     * Processing:if ()message= true
+     else message=  false
+     * Output:message
+     */
+  </script>
+</body>
+</html>

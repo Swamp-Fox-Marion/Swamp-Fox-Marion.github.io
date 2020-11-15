@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Exam 2</title>
+    <link href="styles/basic.css" rel="stylesheet">
+    </head>
+
+<body>
+    <header>
+        <h1>Week 9: Exam Two: Powers</h1>
+        <h2>Powers of 2</h2>
+    </header>
+    <main>
+    
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Alecia Moyer &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        // set vars to use in loop
+        let i = 1;
+        let answer = "";
+        // use a while loop to set condition then answer to repeat then repeat i
+        while (i <= 31) {
+            answer += `${2 ** i}, `;
+            i++;
+        }
+//output the powers of 2 to the console separated by comma
+document.getElementById("output").innerHTML = answer
+        
+       
+    /*
+    Write a JavaScript program in a single HTML file (embed your script)
+    named power.html that does not require input that uses a loop to build 
+    a single string output of all powers of 2 from LaTeX: 2^02 0 up to LaTeX:
+    2^{31}2 31, inclusive. You can choose to use a button to call a function
+    or have no function and just run the code. Your choice.
+    The output must have the following format:  1, 2, 4, 8, ..., 2147483648
+    where there is a comma and space between each value and there is no comma
+    after the last value. Your output does not need to be green.
+    Notation Help in case you are not familiar with standard notations: The
+    dot dot dot (...) in the example output references that fact that there
+    are a lot of values between the two example output values.
+    Submit your HTML document that contains your HTML interface and embedded
+    JavaScript code.*/
+
+    </script>
+        
+</body>
+
+</html>
