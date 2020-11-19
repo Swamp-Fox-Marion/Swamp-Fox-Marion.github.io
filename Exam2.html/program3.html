@@ -18,65 +18,18 @@
         let end = parseInt(document.getElementById("two").value);
         let div = parseInt(document.getElementById("three").value);
         let answer = "";
-        //let i = 0
-//processing a repeating loop
-// I cant ask the loop to work when i is less than 'start' in the beginning. 
-// i isnt always going to be % div so the loop ends there
-     //while (i % div === 0) 
-
-        /*for (let i = 1; i <= end; i++) {
-            if (i >= start && i <= end){
-                answer +=` ${i % div === 0} <br>`;
-            }    
+        
+        let i = start;
+        while (i <= end) {
+          if (i% div==0){
+            answer += `${i} `;
+          }
+          i++;
         }
-    }
-//output to the console the repeating message
-document.getElementById("output").innerHTML = answer;*/
-
-        
-        
-
-    
-        
-        for(let i = 1;i <= end; i++){
-            if(div % i == 0){
-                answer += `${i}`;
-            
-        // it isn't looping from here ?? just goes to else and quits??
-                answer >= start && answer <= end;
-                document.getElementById("output").innerHTML = answer;
-            }    //}else {
-                  // document.getElementById("output").innerHTML = "Am I close?";
-                
-        }
-    } 
-
-
-        
-        
-        
-      /*  
-        for (i = 0; i <= end; i++) {
-            if (i % div) {
-            output = i;
-            }
-        }
-    }
-    document.getElementById("output").innerHTML = output
-    /*Input:start end and divisor by user
-    using the divisor as the count
-     * Processing:
-        while (div <= end){
-            output += `${start} % ${div}`;
-            div ++;
-        }
-     need something else. for (i=0; i>=start && i<=end; i++)
-    }
-    document.getElementById("output").innerHTML = output
-    
-      Output: divisible by skip
-
-    Write a JavaScript program that reads three integers named start, 
+      }
+        document.getElementById("output").innerHTML = answer;
+     
+    /*Write a JavaScript program that reads three integers named start, 
     end, and divisor from three text fields. Your program must output 
     to a div all the integers between start and end, inclusive, that are
     evenly divisible by divisor. The output integers must be separated by
