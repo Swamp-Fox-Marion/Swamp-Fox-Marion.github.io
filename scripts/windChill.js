@@ -46,5 +46,5 @@ let tempF = parseFloat(document.getElementById("t").value);
 }
 function windChill(tempF, speed) {
     windchill = 35.74 + 0.6215 *tempF - 35.75 * speed**0.16 + 0.4275 * tempF * speed**0.16;
-    return document.getElementById("output").innerHTML = windchill + "F";
+    return document.getElementById("output").innerHTML = parseInt(windchill) + "F";
 }
