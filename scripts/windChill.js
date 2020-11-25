@@ -36,7 +36,7 @@ return the wind chill factor in Fahrenheit*/
 function doInputOutput(){
     let speed = parseFloat(document.getElementById("s").value);
     let tempF = parseFloat(document.getElementById("t").value);
-    let message = " ";
+    
 
 
     if (tempF < 50 && speed > 3) {
