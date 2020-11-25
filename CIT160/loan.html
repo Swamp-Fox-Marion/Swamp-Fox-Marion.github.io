@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Week 11 Loan</title>
+    <link href="../styles/basic.css" rel="stylesheet" >
+    
+</head>
+
+<body>
+    <header>
+        <h1>Week11: Loan</h1>
+        <h2>Alecia Moyer</h2>
+    </header>
+    <main>
+        <h3>Loan Calculator</h3>
+        <label>Enter Amount Invested (Principal): <input type="text" id="principal"></label>
+        <label>Enter Annual rate (example: .08): <input type="text" id="annualRate"></label>
+        <label>Enter Number of Years:<input type="text" id="years"></label>
+        <label>Enter Periods per Year:<input type= "text" id="periodsPerYear"></label>
+        <label>Enter Number of Payments Paid to Date:<input type = "text" id="numberOfPaymentPaidToDate"></label>
+        <label><button onclick="doPayment()">Calculate Payment</button></label>
+        <label><button onclick="doBalance()">Calculate Balance</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Alecia Moyer &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="../scripts/invest.js"></script>
+        
+   
+</body>
+
+</html>
