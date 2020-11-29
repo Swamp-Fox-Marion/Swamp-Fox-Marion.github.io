@@ -1,11 +1,11 @@
-let message;
+let message = " ";
 function doFV() {
-    let a = floatInt(document.getElementById("principal").value);
-    let p = floatInt(document.getElementById("periodsPerYear").value);
-    let n = floatInt(document.getElementById("years").value);
-    let x = floatInt(document.getElementById("annualRate").value);
-    let future = computeFutureValue(a, x, n, p);
-    message = future;
+    let pr = floatInt(document.getElementById("principal").value);
+    let ppr = floatInt(document.getElementById("periodsPerYear").value);
+    let y = floatInt(document.getElementById("years").value);
+    let ar = floatInt(document.getElementById("annualRate").value);
+    let future = computeFutureValue(pr, ar, y, ppr);
+    message = `${future}`;
 }
 
 function computeFutureValue(principal, annualRate, years, periodsPerYear) {
@@ -14,9 +14,10 @@ function computeFutureValue(principal, annualRate, years, periodsPerYear) {
     principal, r is the growth rate per period, 
     and n is the total number of periods throughout 
     the life of the investment.*/
-    return a(1+(x%p))**n;
+    let r = annualRate / periodsPerYear
+    return principal * (1 + r)**years;
     
 
     //r = annualRate/periodsPerYear
 }
-document.getElementById("output").innerHTML= message
+document.getElementById("output").innerHTML = message
