@@ -15,8 +15,8 @@
         <h2>Alecia Moyer</h2>
     </header>
     <main>
-        <h3>Click Click Click numbers magically appear</h3>
-        <label><button onclick="test()">Make it so!</button></label>
+        <h3>Finders Keepers</h3>
+        <label><button onclick="test()">What seek ye?</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
@@ -54,11 +54,18 @@ function test() {
     document.getElementById('output').innerHTML = output;
 }
 function countEvens(list) {
-
+    //use filter method
+    let value = list.filter(x => x % 2 == 0);
+    return value;
 } //end function countEvens
 
+/*Write a function to multiply each element in an array by some value
+ and to return the products in an array. */
 function multiply(list, multiplier) {
-
+    //use map method
+    let product = list.map(x => x * 3);
+    return product;
+    
 
 } //end function multiply
     
