@@ -38,8 +38,8 @@ function test() {
     let count2 = countEvens(list2);
 
     // Test the multiply function by calling it two times.
-    let mult1 = multiply(list1);
-    let mult2 = multiply(list2);
+    let mult1 = multiply(list1, 3);
+    let mult2 = multiply(list2, 2);
 
     // Build a string to display to the user.
     let output =
@@ -63,7 +63,7 @@ function countEvens(list) {
  and to return the products in an array. */
 function multiply(list, multiplier) {
     //use map method
-    let product = list.map(x => x * 3);
+    let product = list.map(x => x * multiplier);
     return product;
     
 
